@@ -56,15 +56,15 @@ typedef NS_OPTIONS(NSInteger, MASAttribute) {
  *  with the first item set to the makers associated view and the appropriate MASViewAttribute
  */
 @property (nonatomic, strong, readonly) MASConstraint *left;
-@property (nonatomic, strong, readonly) MASConstraint *top;
+@property (nonatomic, strong, readonly) MASConstraint *mas_top;
 @property (nonatomic, strong, readonly) MASConstraint *right;
-@property (nonatomic, strong, readonly) MASConstraint *bottom;
+@property (nonatomic, strong, readonly) MASConstraint *mas_bottom;
 @property (nonatomic, strong, readonly) MASConstraint *leading;
 @property (nonatomic, strong, readonly) MASConstraint *trailing;
 @property (nonatomic, strong, readonly) MASConstraint *width;
 @property (nonatomic, strong, readonly) MASConstraint *height;
-@property (nonatomic, strong, readonly) MASConstraint *centerX;
-@property (nonatomic, strong, readonly) MASConstraint *centerY;
+@property (nonatomic, strong, readonly) MASConstraint *mas_centerX;
+@property (nonatomic, strong, readonly) MASConstraint *mas_centerY;
 @property (nonatomic, strong, readonly) MASConstraint *baseline;
 
 #if (__IPHONE_OS_VERSION_MIN_REQUIRED >= 80000) || (__TV_OS_VERSION_MIN_REQUIRED >= 9000) || (__MAC_OS_X_VERSION_MIN_REQUIRED >= 101100)
@@ -110,7 +110,7 @@ typedef NS_OPTIONS(NSInteger, MASAttribute) {
 
 /**
  *	Creates a MASCompositeConstraint with type MASCompositeConstraintTypeCenter
- *  which generates the appropriate MASViewConstraint children (centerX, centerY)
+ *  which generates the appropriate MASViewConstraint children (mas_centerX, mas_centerY)
  *  with the first item set to the makers associated view
  */
 @property (nonatomic, strong, readonly) MASConstraint *center;

@@ -17,15 +17,15 @@
 @interface MAS_VIEW (MASShorthandAdditions)
 
 @property (nonatomic, strong, readonly) MASViewAttribute *left;
-@property (nonatomic, strong, readonly) MASViewAttribute *top;
+@property (nonatomic, strong, readonly) MASViewAttribute *mas_top;
 @property (nonatomic, strong, readonly) MASViewAttribute *right;
-@property (nonatomic, strong, readonly) MASViewAttribute *bottom;
+@property (nonatomic, strong, readonly) MASViewAttribute *mas_bottom;
 @property (nonatomic, strong, readonly) MASViewAttribute *leading;
 @property (nonatomic, strong, readonly) MASViewAttribute *trailing;
 @property (nonatomic, strong, readonly) MASViewAttribute *width;
 @property (nonatomic, strong, readonly) MASViewAttribute *height;
-@property (nonatomic, strong, readonly) MASViewAttribute *centerX;
-@property (nonatomic, strong, readonly) MASViewAttribute *centerY;
+@property (nonatomic, strong, readonly) MASViewAttribute *mas_centerX;
+@property (nonatomic, strong, readonly) MASViewAttribute *mas_centerY;
 @property (nonatomic, strong, readonly) MASViewAttribute *baseline;
 @property (nonatomic, strong, readonly) MASViewAttribute *(^attribute)(NSLayoutAttribute attr);
 
@@ -62,16 +62,16 @@
 
 @implementation MAS_VIEW (MASShorthandAdditions)
 
-MAS_ATTR_FORWARD(top);
+MAS_ATTR_FORWARD(mas_top);
 MAS_ATTR_FORWARD(left);
-MAS_ATTR_FORWARD(bottom);
+MAS_ATTR_FORWARD(mas_bottom);
 MAS_ATTR_FORWARD(right);
 MAS_ATTR_FORWARD(leading);
 MAS_ATTR_FORWARD(trailing);
 MAS_ATTR_FORWARD(width);
 MAS_ATTR_FORWARD(height);
-MAS_ATTR_FORWARD(centerX);
-MAS_ATTR_FORWARD(centerY);
+MAS_ATTR_FORWARD(mas_centerX);
+MAS_ATTR_FORWARD(mas_centerY);
 MAS_ATTR_FORWARD(baseline);
 
 #if (__IPHONE_OS_VERSION_MIN_REQUIRED >= 80000) || (__TV_OS_VERSION_MIN_REQUIRED >= 9000) || (__MAC_OS_X_VERSION_MIN_REQUIRED >= 101100)

@@ -175,7 +175,7 @@
     return [self addConstraintWithLayoutAttribute:NSLayoutAttributeLeft];
 }
 
-- (MASConstraint *)top {
+- (MASConstraint *)mas_top {
     return [self addConstraintWithLayoutAttribute:NSLayoutAttributeTop];
 }
 
@@ -183,7 +183,7 @@
     return [self addConstraintWithLayoutAttribute:NSLayoutAttributeRight];
 }
 
-- (MASConstraint *)bottom {
+- (MASConstraint *)mas_bottom {
     return [self addConstraintWithLayoutAttribute:NSLayoutAttributeBottom];
 }
 
@@ -203,11 +203,11 @@
     return [self addConstraintWithLayoutAttribute:NSLayoutAttributeHeight];
 }
 
-- (MASConstraint *)centerX {
+- (MASConstraint *)mas_centerX {
     return [self addConstraintWithLayoutAttribute:NSLayoutAttributeCenterX];
 }
 
-- (MASConstraint *)centerY {
+- (MASConstraint *)mas_centerY {
     return [self addConstraintWithLayoutAttribute:NSLayoutAttributeCenterY];
 }
 

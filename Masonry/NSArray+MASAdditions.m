@@ -72,13 +72,13 @@
             [v mas_makeConstraints:^(MASConstraintMaker *make) {
                 if (prev) {
                     make.height.equalTo(prev);
-                    make.top.equalTo(prev.mas_bottom).offset(fixedSpacing);
+                    make.mas_top.equalTo(prev.mas_bottom).offset(fixedSpacing);
                     if (i == self.count - 1) {//last one
-                        make.bottom.equalTo(tempSuperView).offset(-tailSpacing);
+                        make.mas_bottom.equalTo(tempSuperView).offset(-tailSpacing);
                     }                    
                 }
                 else {//first one
-                    make.top.equalTo(tempSuperView).offset(leadSpacing);
+                    make.mas_top.equalTo(tempSuperView).offset(leadSpacing);
                 }
                 
             }];
@@ -124,15 +124,15 @@
                 make.height.equalTo(@(fixedItemLength));
                 if (prev) {
                     if (i == self.count - 1) {//last one
-                        make.bottom.equalTo(tempSuperView).offset(-tailSpacing);
+                        make.mas_bottom.equalTo(tempSuperView).offset(-tailSpacing);
                     }
                     else {
                         CGFloat offset = (1-(i/((CGFloat)self.count-1)))*(fixedItemLength+leadSpacing)-i*tailSpacing/(((CGFloat)self.count-1));
-                        make.bottom.equalTo(tempSuperView).multipliedBy(i/((CGFloat)self.count-1)).with.offset(offset);
+                        make.mas_bottom.equalTo(tempSuperView).multipliedBy(i/((CGFloat)self.count-1)).with.offset(offset);
                     }
                 }
                 else {//first one
-                    make.top.equalTo(tempSuperView).offset(leadSpacing);
+                    make.mas_top.equalTo(tempSuperView).offset(leadSpacing);
                 }
             }];
             prev = v;

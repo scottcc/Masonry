@@ -32,16 +32,16 @@
     static NSDictionary *descriptionMap;
     dispatch_once(&once, ^{
         descriptionMap = @{
-            @(NSLayoutAttributeTop)      : @"top",
+            @(NSLayoutAttributeTop)      : @"mas_top",
             @(NSLayoutAttributeLeft)     : @"left",
-            @(NSLayoutAttributeBottom)   : @"bottom",
+            @(NSLayoutAttributeBottom)   : @"mas_bottom",
             @(NSLayoutAttributeRight)    : @"right",
             @(NSLayoutAttributeLeading)  : @"leading",
             @(NSLayoutAttributeTrailing) : @"trailing",
             @(NSLayoutAttributeWidth)    : @"width",
             @(NSLayoutAttributeHeight)   : @"height",
-            @(NSLayoutAttributeCenterX)  : @"centerX",
-            @(NSLayoutAttributeCenterY)  : @"centerY",
+            @(NSLayoutAttributeCenterX)  : @"mas_centerX",
+            @(NSLayoutAttributeCenterY)  : @"mas_centerY",
             @(NSLayoutAttributeBaseline) : @"baseline",
             
 #if (__IPHONE_OS_VERSION_MIN_REQUIRED >= 80000) || (__TV_OS_VERSION_MIN_REQUIRED >= 9000) || (__MAC_OS_X_VERSION_MIN_REQUIRED >= 101100)

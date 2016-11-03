@@ -123,15 +123,15 @@
  *	Creates a new MASCompositeConstraint with the called attribute and reciever
  */
 - (MASConstraint *)left;
-- (MASConstraint *)top;
+- (MASConstraint *)mas_top;
 - (MASConstraint *)right;
-- (MASConstraint *)bottom;
+- (MASConstraint *)mas_bottom;
 - (MASConstraint *)leading;
 - (MASConstraint *)trailing;
 - (MASConstraint *)width;
 - (MASConstraint *)height;
-- (MASConstraint *)centerX;
-- (MASConstraint *)centerY;
+- (MASConstraint *)mas_centerX;
+- (MASConstraint *)mas_centerY;
 - (MASConstraint *)baseline;
 
 #if (__IPHONE_OS_VERSION_MIN_REQUIRED >= 80000) || (__TV_OS_VERSION_MIN_REQUIRED >= 9000) || (__MAC_OS_X_VERSION_MIN_REQUIRED >= 101100)
